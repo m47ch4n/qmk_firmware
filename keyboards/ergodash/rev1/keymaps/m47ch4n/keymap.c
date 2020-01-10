@@ -18,16 +18,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |------+------+------+------+------+------+------+--------------------+------+------+------+------+------+------+------|
      * | CTRL |   A  |   S  |   D  |   F  |   G  | EISU | <- ONLY FOR MAC -> | KANA |   H  |   J  |   K  |   L  |   ;  |  '   |
      * |------+------+------+------+------+------+---------------------------+------+------+------+------+------+------+------|
-     * | SHIFT|   Z  |   X  |   C  |   V  |   B  | SHIFT|                    | SHIFT|   N  |   M  |   ,  |   .  |   /  | SHIFT|
+     * | SHIFT|   Z  |   X  |   C  |   V  |   B  |DESKDN|                    |DESKUP|   N  |   M  |   ,  |   .  |   /  | SHIFT|
      * |-------------+------+------+------+------+------+------+------+------+------+------+------+------+------+-------------|
      * | SHIFT|  ALT |  GUI |ADJUST|||||||| LOWER| SPACE|      ||||||||      | ENTER| RAISE||||||||ADJUST|  GUI |  ALT | SHIFT|
      * ,----------------------------------------------------------------------------------------------------------------------.
      */
     [_QWERTY] = LAYOUT( \
       KC_ESC,  CSTM_1,  CSTM_2,  CSTM_3,  CSTM_4,  CSTM_5,  JP_KANA,                        JP_KANA, CSTM_6,  CSTM_7,  CSTM_8,  CSTM_9,  CSTM_0,  GRV    , \
-      KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    LCTL(KC_PGDN),            LCTL(KC_PGUP), KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    BSLS   , \
+      KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    G(KC_PGDN),                  G(KC_PGUP), KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    BSLS   , \
       KC_LGUI, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    JP_MEISU,                       JP_MKANA,KC_H,    KC_J,    KC_K,    KC_L,    SCLN,    QUOT   , \
-      SHIFT,   KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    SHIFT  ,                        SHIFT,   KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, SHIFT  , \
+      SHIFT,   KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    G(KC_PGDN),                  G(KC_PGUP), KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, SHIFT  , \
       SHIFT,   KC_LALT, KC_LCTL, ADJUST,           LOWER,   KC_SPC ,XXXXXXX,        XXXXXXX,KC_ENT , RAISE,            ADJUST,  KC_LCTL, KC_LALT, SHIFT    \
     ),
 
