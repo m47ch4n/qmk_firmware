@@ -204,7 +204,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 		    unregister_code(KC_LGUI);
                 } else {
 		    register_code(KC_LCTL);
-		    tap_code(KC_RIGHT);
+		    tap_code(KC_LEFT);
 		    unregister_code(KC_LCTL);
                 }
 	    }
@@ -218,7 +218,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 		    unregister_code(KC_LGUI);
                 } else {
 		    register_code(KC_LCTL);
-		    tap_code(KC_LEFT);
+		    tap_code(KC_RIGHT);
 		    unregister_code(KC_LCTL);
                 }
 	    }
